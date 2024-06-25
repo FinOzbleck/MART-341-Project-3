@@ -1,0 +1,184 @@
+body {
+    background-color: whitesmoke; text-align: center; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.25em;
+    margin: 0;
+}
+
+  /* --------------------
+  |   NAVIGATION STYLE   |
+   -------------------- */
+   /* COLLAPSED */
+   .navigation {
+     background-color: purple;
+     width: 50px; /* Collapsed size */
+     height: 100%;
+  
+     position: fixed; /* Fix the collapse to the right */
+     top: 0;
+     right: 0;
+     overflow: hidden;
+  
+     text-align: center;
+   }
+   /* The icon */
+   .hamburger-icon {
+     font-size: 2em;
+     color: white;
+   }
+   .navigation *:not(.hamburger-icon) {
+     visibility: hidden; /* Hides everything EXCEPT the icon while collapsed */
+   }
+  
+   /* EXPANDED */
+   .navigation:hover {
+     background-color: purple;
+     width: 300px;
+   }
+   .navigation:hover * {
+     visibility: visible; /* Shows everything while expanded */
+   }
+   .navigation:hover .hamburger-icon {
+     visibility: hidden;
+   }
+   .navigation a {
+     color: white;
+     text-decoration: none;
+   }
+  
+   /* Logo and title */
+   .site-info {
+     text-align: center;
+     font-size: 200%;
+   }
+   .site-info a {
+     color: white !important;
+   }
+   .logo {
+     background-color: lightgoldenrodyellow;
+     width: 256px;
+     height: 256px;
+  
+     display: block;
+     margin: 1em auto; /* "auto" centers block content */
+  
+     border-radius: 100%;
+  
+     line-height: 150px; /* Centers text vertically in div of same height */
+     color: #000;
+     text-transform: uppercase;
+   }
+  
+   /* Site links */
+   .site-links {
+     margin-top: 1em;
+   }
+   .site-links a {
+     background-color: inherit;
+  
+     display: block; /* Make inline element a block-level (100% width) element */
+     padding: 1em;
+   }
+   .site-links a:hover, .site-links .active {
+     color: purple;
+     background-color: white;
+   }
+  
+   /* Optional: links to social accounts */
+   #social-share {
+     background-color: purple;
+     height: 30px;
+  
+     position: relative;
+  
+     display: inline-block;
+     margin-bottom: 2em;
+   }
+   .social-select {
+     background-color: inherit;
+     height: inherit;
+  
+     display: inline-block;
+     padding: 10px;
+  
+     color: #FFF;
+     line-height: 30px; /* Centers text vertically in div of same height */
+     cursor: grab;
+   }
+   .social-links {
+     background-color: inherit;
+     min-width: 10em;
+     height: inherit;
+  
+     position: absolute;
+  
+     display: none;
+     padding: 10px;
+  
+     z-index: 1;
+   }
+   .social-links img {
+     background-color: lavender;
+     width: auto;
+     height: 100%;
+   }
+   .social-links img:hover {
+     background-color: #FFF;
+   }
+   #social-share:hover .social-links {
+     display: inline-block;
+   }
+  
+  
+  
+  /* ----------------------
+  |   MAIN CONTENT STYLE   |
+   ---------------------- */
+   .main {
+     background-color: #FFF;
+     overflow: auto; /* Default (redundant) */
+  
+     padding: 50px 150px 50px 50px;
+   }
+   .banner {
+     width: 100%;
+     height: auto;
+   }
+.container {
+    background-color: lightgoldenrodyellow;
+    width: 600px;
+    margin: auto;
+    padding: 150px;
+    border: 1px solid black;
+}
+p {
+    color: indigo;
+    font-size: 24px;
+}
+.p {
+    color: black;
+    font-size: small;
+}
+h1{
+    color: darkblue;
+}
+h2{
+    color: navy;
+}
+h3{
+    color: darkmagenta;
+}
+h4{
+    color: darkred;
+}
+h5{
+    color: indigo;
+}
+h6{
+    color: darkgreen;
+}
+text{
+    color: purple;
+}
+span{
+    font-family: Verdana, Geneva, Tahoma, sans-serif; background-color: white; text-decoration-color: blueviolet;
+}
